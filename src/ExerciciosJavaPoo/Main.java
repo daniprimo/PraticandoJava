@@ -42,7 +42,7 @@ public class Main {
         agenda.removePessoa("Henrrique");
 
        agenda.mostrarAgenda();
-       agenda.imprimePessoa(2);
+       agenda.imprimePessoa(1);
 
 
 

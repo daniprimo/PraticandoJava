@@ -31,6 +31,7 @@ public class Agenda {
     };
 
     void imprimePessoa (int index){
+        index = index - 1;
         for (Pessoa pessoa:agenda){
             if (index == agenda.indexOf(pessoa))
                 pessoa.mostrarDados();
