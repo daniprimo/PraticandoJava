@@ -19,11 +19,11 @@ public class Map {
 
         System.out.println(maiuscula.andThen(primeiraLetra).andThen(grito).apply("BMW"));
 
-        System.out.println("Utilizando a composição\n");
+        System.out.println("\nUtilizando a composição\n");
         marcas.stream()
-                .map(maiuscula)
+                .map(Utilitarios.maiuscula)
                 .map(primeiraLetra)
-                .map(grito)
+                .map(Utilitarios::grito)
                 .forEach(print);
     }
 }
